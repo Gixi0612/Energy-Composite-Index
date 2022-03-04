@@ -13,7 +13,7 @@
 
 <b> Use linear regression to try and find a correlation between: </b>
 - EEI <br>
-- GDP/capita (NY.GDP.PCAP.PP.KD)
+- GDP/capita (NY.GDP.PCAP.PP.KD) <br>
 
 
 
