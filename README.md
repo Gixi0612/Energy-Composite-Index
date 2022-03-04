@@ -9,3 +9,9 @@ CHN FRA JPN RUS USA
 Use linear regression to try and find a correlation between:
 
 EEI and GDP/capita (NY.GDP.PCAP.PP.KD)
+
+
+
+Link to our JIRA SCRUM work plan: https://dafeb.atlassian.net/jira/software/projects/ECI/boards/5/roadmap
+
+
