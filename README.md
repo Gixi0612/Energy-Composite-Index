@@ -15,7 +15,8 @@ USA<br>
 
 <b> Use linear regression to try and find a correlation between: </b>
 
-EEI and GDP/capita (NY.GDP.PCAP.PP.KD)
+EEI <br>
+and GDP/capita (NY.GDP.PCAP.PP.KD)
 
 
 
