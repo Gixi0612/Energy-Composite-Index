@@ -99,7 +99,15 @@ from (select economy, (YR2010+YR2011+YR2012+YR2013+YR2014)/5 as AVG_energy_use
 from energy_use_2) as A
 order by economy);
 
-create table Energy_Effiency_Index (SELECT *, 
+#gdp rank
+CREATE TABLE F (select economy,
+avg_gdp,
+row_number() OVER(ORDER BY avg_gdp DESC) avg_gdp_rank
+from (select economy, (YR2010+YR2011+YR2012+YR2013+YR2014)/5 as avg_gdp
+from gdp_2) as A
+order by economy);
+
+create table Energy_Effiency_Index (SELECT *,
 (Alt_nuclear_good_ranking + co2_emission_use_rank + energy_import_rank + energy_use_rank)/4 as Energy_Effiency_Index
 from 
 (Select A.economy, A.Alt_nuclear_good_ranking,
@@ -112,6 +120,8 @@ inner join C
 on A.economy = C.economy 
 inner join D
 on A.economy = D.economy
+inner join F
+on A.economy = F.economy
 ORDER BY economy) as E 
 order by Energy_Effiency_Index desc);
 
@@ -119,8 +129,21 @@ select * from A;
 select * from B;
 select * from C;
 select * from D;
-select * from energy_effiency_index;
+select * from F;
+CREATE TABLE GDP_EEI (select Energy_Effiency_Index.economy,
+Energy_Effiency_Index.Alt_nuclear_good_ranking,
+Energy_Effiency_Index.co2_emission_use_rank,
+Energy_Effiency_Index.energy_import_rank,
+Energy_Effiency_Index.energy_use_rank,
+Energy_Effiency_Index.Energy_Effiency_Index,
+f.avg_gdp,
+f.avg_gdp_rank
+from energy_effiency_index
+left join F
+on energy_effiency_index.economy = F.economy);
 
+select * from Energy_Effiency_Index;
+select * from gdp_eei;
 
 
 
