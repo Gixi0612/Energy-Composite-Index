@@ -7,12 +7,17 @@ EG.IMP.CONS.ZS Energy imports, net (% of energy use)
 
 
 
-Compute an Energy Efficiency Index (EEI) for 5 key countries: 
+Compute an Energy Efficiency Index (EEI) for a selection of 10 key countries: 
 
 CHN
 FRA
+GBR
+IND
 JPN
 RUS
+TUN
+TUR
+UKR
 USA
 
 Use linear regression to try and find a correlation between:
