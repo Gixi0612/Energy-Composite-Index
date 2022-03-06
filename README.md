@@ -4,7 +4,7 @@
 - EG.USE.PCAP.KG.OE Energy use (kg of oil equivalent per capita) <br>
 - EG.IMP.CONS.ZS Energy imports, net (% of energy use) <br> 
 
-<b> Compute an Energy Efficiency Index (EEI) for 5 key countries: </b>
+<b> Compute an Energy Efficiency Index (EEI) for a selection of 10 key countries: </b>
 - CHN <br> 
 - FRA <br> 
 - GBR <br>
