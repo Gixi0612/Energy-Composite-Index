@@ -7,9 +7,14 @@
 <b> Compute an Energy Efficiency Index (EEI) for 5 key countries: </b>
 - CHN <br> 
 - FRA <br> 
+- GBR <br>
+- IND <br>
 - JPN <br> 
 - RUS <br> 
-- USA<br> 
+- TUN <br>
+- TUR <br>
+- UKR <br>
+- USA <br> 
 
 <b> Use linear regression to try and find a correlation between: </b>
 - EEI <br>
